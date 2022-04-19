@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./sass/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./sass/css/common.css" />
+    <link rel="stylesheet" href="./sass/css/home.css" />
+    <link rel="stylesheet" href="./sass/css/plp.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-------Overlay------>
+
+    <div class="overlay"></div>
+    <!----------Header----------->
+    <header class="header">
+      <div class="hdWrp">
+        <div class="leftSec">
+          <a href="#" class="logoImg"
+            ><img src="images/logo.png" alt="logo" />
+          </a>
+          <nav class="navWrp">
+            <ul>
+              <li>
+                <a class="active" href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="plp.html">Products</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="rightSec">
+          <div class="rgtTop">
+            <a href="login.html">SignIn</a>
+            <a href="register.html">Register</a>
+          </div>
+          <div class="rgtBtm">
+            <a href="javascript:void(0);" class="cart_open" id="cart_open">
+              <span class="cartIco"></span>
+              <span class="cartCount">0</span>
+              <span class="cartTxt">items</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <main class="main-content">
+      <!-------emptyCart- Starts------->
+      <!-- <div class="cart_flyout" id="cart_flyout">
+        <div class="cart_hd">
+          <h4>
+            <span class="cart_title">My Cart</span>
+          </h4>
+          <button class="close_btn">X</button>
+        </div>
+        <div class="empty_cart">
+          <h4>No Items in your cart</h4>
+          <span>Your Favourite items are just a click away.</span>
+        </div>
+
+        <div class="cart_ftr">
+          <a href="" class="primaryBtn desktop">
+            <span>Start Shopping</span>
+          </a>
+        </div>
+      </div> -->
+
+      <!-- cart starts -->
+      <div class="cart_flyout" id="cart_flyout">
+        <div class="cart_hd">
+          <h4>
+            <span class="cart_title">My Cart</span>
+            <span class="cart_hd_count">(1 item)</span>
+          </h4>
+          <button class="close_btn">X</button>
+        </div>
+        <div class="cart_bdy">
+          <div class="cart_prd">
+            <div class="cart_prd_img"></div>
+            <div class="cart_prd_dtl">
+              <h4>Apple - Washington,Regular, 4pcs</h4>
+              <div class="amt_dtl">
+                <a href="javascript:void(0)" class="counter decrement">-</a>
+                <span class="count">1</span>
+                <a href="javascript:void(0)" class="counter increment">+</a>
+                <span class="cart_mul">X</span>
+                <span class="cart_prd_amt">Rs.187</span>
+                <span class="cart_prd_price">Rs.187</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart_content">
+            <div class="cart_msg_wrp">
+              <span class="crt_imgWrp"
+                ><img src="images/guarantee.png" alt=""
+              /></span>
+              <span class="crt_txt">You won't find it cheaper anywhere</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart_ftr">
+          <p>Promo code can be applied on payment page</p>
+          <a href="" class="primaryBtn desktop">
+            <span>Proceed to checkout</span>
+            <span class="grandTtl">Rs.187</span>
+          </a>
+        </div>
+      </div>
+      <!-- cart ends -->
+      <div class="main-container">
+        <!-----aside------->
+        <aside>
+          <ul>
+            <li><a href="javascript:void(0)">Fruits & Vegetables</a></li>
+            <li><a href="javascript:void(0)">Bakery Cakes and Dairy</a></li>
+            <li><a href="javascript:void(0)">Beverages</a></li>
+            <li><a href="javascript:void(0)">Beauty and Hygiene</a></li>
+            <li><a href="javascript:void(0)">Baby Care</a></li>
+          </ul>
+        </aside>
+        <!------aside end ------>
+        <!--------section----->
+        <section class="prod_wrapper">
+          <div class="leftMenuDrp mobile">
+            <a href="javascript:void(0)" class="drpdn"
+              ><span class="selectedVal">Fruits & Vegetables</span>
+              <span class="arrow"></span>
+            </a>
+            <div class="leftMenuCont">
+              <ul>
+                <li><a href="javascript:void(0)">Fruits & Vegetables</a></li>
+                <li><a href="javascript:void(0)">Bakery Cakes and Dairy</a></li>
+                <li><a href="javascript:void(0)">Beverages</a></li>
+                <li><a href="javascript:void(0)">Beauty and Hygiene</a></li>
+                <li><a href="javascript:void(0)">Baby Care</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="prod_content_wrp">
+            <div class="prod_details">
+              <h3 class="prod_name">Fresho Kiwi - Green, 3 pcs</h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/kiwi.png" alt="kiwi" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Kiwis are oval shapped with a brown outer skin. The flesh is
+                  bright and juicy with tiny, edible black seeds.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+                  <span class="mrp desktop">MRP Rs.87</span>
+
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Apple - Washington, Regular, 4 pcs</h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/apple.png" alt="apple" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  The bright red coloured and heart shaped Washington apples are
+                  crinchy, juicy and slightly sweet. Washington Apples are a
+                  natural
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.187</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Fresho Pomegranate Peeled, 500 gm</h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/pomegranate.png" alt="pomegranate" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Pomegranate variety has a glossy, vibrant and soft ruby-red
+                  skin. The inside of the fruit is divided into compartments by
+                  thin white.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+                  <span class="mrp desktop">MRP Rs.88</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Capsicum - Green, 1kg</h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/capsicum.png" alt="capsicum" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Leaving a moderately pungent taste on the tongue, Green
+                  capsicums, also know as green peppers are bell shaped,
+                  medium-sized fruit pods.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.137</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Tomato - Local, Organically Grown, 500gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/capsicum.png" alt="capsicum" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Fresho brings to you an exquisite range of locally grown
+                  organic tomatoes, which are now availbale at bigbasket. These
+                  organic tomatoes
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.12</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Sandwich Bread - White, Chemical Free, 400 gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/bread1.png" alt="bread1" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Fresho Baked bread is one of lifes greatest simple pleasures
+                  and at Bigbasket we decided to give you just that. We start
+                  baking our breads once
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.32</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="prod_details">
+              <h3 class="prod_name">Organic Fresh Paneer, 200 gm</h3>
+              <div class="imgContainer">
+                <div class="prod_img">
+                  <img src="images/organic.png" alt="" />
+                </div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Freshly Baked bread is one of lifes greatest simple pleasures
+                  and at Bigbasket we deFresho Organic Milk is sourced from
+                  farms that have been
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.150</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Epigamia Greek Yogurt - Blueberry, 90 gm cup
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/yogurt.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Epigama means in Ancient Greek meant a way to Formalize the
+                  relationship between different rations. Epigamia freek yogurt
+                  is one
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.40</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Epigamia Greek Yogurt - Strawberry, 90 gm cup
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/yogurt1.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Low Fat and High protein delicious and thick Greek Yogurt.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.40</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Tata Tea Gold Leaf Tea, 500gm</h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/tata_gold.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Tat Tea Gold is a unique blend of fine Assam tea leaves with
+                  special 15% long leaf.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.165</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Red Label Tea, 500 gm Carton</h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/redlabel.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Brooke Bond Red Label is one of Indias largest selling
+                  packaged tea brands. Brooke Bond RedLabel Tea is a blend CTC
+                  tea with best quality
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.205</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Bournvita Pro-Health Drink - Chocoloate, 2x750 gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/bournvita.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Cadbury Bournvita is a delicious chocoloate health drink which
+                  is enriched with Vitamin (D, B2, B9, B12). It combines the
+                  great taste of
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.572</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Coca Cola Soft Drink, 2x1.75L</h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/bournvita.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Cadbury Bournvita is a delicious chocoloate health drink which
+                  is enriched with Vitamin (D, B2, B9, B12). It combines the
+                  great taste of
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.150</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Listerine Mouthwash - Cool Mint, 250 ml</h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/mouthwash.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Listering Cool mint Antibacterial Mouthwash is rapid & easy to
+                  use, a 30 second "slosh" with Listerine after brushing and
+                  flossing reaches parts
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.109</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                TRESemme Shampoo - Keratin Smooth With Argan Oil, 580 ml
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/shampoo.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  For the first time, at TRESemme, Our Professional combines
+                  luxurious ingredients to give you gorgeouslysmoother shiny
+                  hair every day.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.410</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Dove Intense Repair Shampoo 650ml + Bathing Bar Soap Cream
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/dove.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Dove Cream Beauty Bar combines a gentle cleansing formula with
+                  Doves signature 1/4 moisturizing cream to give you softer,
+                  smoother and more
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.622</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Premier facial Tissue - Special, 400 pcs
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/premier.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Let your beautiful face stay clean Here Premier Special Face
+                  Tissues are availbale, mostly prepared targeting to care for
+                  your face which
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.270</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Close Up Ever Fresh Red Hot Gel Toothpaste, 150 gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/closeup.png" /></div>
+              </div>
+              <div class="prod_desc">
+                Closeup's unique Active Zinc Mouthwash not only cleans deep
+                corners of your mouth of resikdual germs it also you upto 12
+                Hours
+              </div>
+              <div class="prod_price">
+                <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                <span class="mrp desktop">MRP Rs.82</span>
+                <a href="" class="primaryBtn desktop">Buy Now</a>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Pampers Diapers Pants - Large Size, Monthly Box Pack, New, 128`s
+                pack
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/pampers.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Pampers dry, pants style diapers are the only pants in India
+                  with new air channels that provides your baby with breathable
+                  dryness overnight.
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.1999</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Mamypoko Pants Style Diapers - large, 62 pcs
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/tata_gold.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  mamyPoko Pants Extra Absorb is a Pant Style diaper that can be
+                  used most comfortably for the baby at right Because of
+                  Powerful slim core
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.930</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Johnson & Johnson Baby skincare wipes, 20 pcs
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/johnsons.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Johnsons Baby wipes gently cleanse and care for babys delicate
+                  skin. As mild as pure water, they can be used safely all over
+                  the body, even around
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.70</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Nestle Cerelac Stage - 4 Multi Grain & Fruits, 2x300 gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/cerelac.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Nestle Mutligrain Cerelac enriched with the goodness of five
+                  fruits is a complementary food which is given to babies above
+                  the age six
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.478</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                baby Dove Baby Bar - Rich Moisture, 50 gm
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/babyDove.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  Gentle and more nourishing than any other baby soap bar, Baby
+                  Dove Rich Moisture Baby Bar has a hypoallergenic and pH
+                  neutral
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.30</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">
+                Johnson's Active Kids Shampoo - Shiny Drops With Argon Oil, 100
+                ml
+              </h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/kidsShampoo.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  A hair care product range specifically for kids aged 2 years
+                  and above. This mild shiny drops shampoo formula has been
+                  developed to boost natural
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.95</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="prod_details">
+              <h3 class="prod_name">Baby Wipes - CHerry Blossom, 2x80 pcs</h3>
+              <div class="imgContainer">
+                <div class="prod_img"><img src="images/valuePack.png" /></div>
+              </div>
+              <div class="descWrapper">
+                <div class="prod_desc">
+                  These Wipes have aloe vera as key ingredient which makes it
+                  the best choice for baby hygiene, make-up remover, sanitizing
+                  your face and
+                </div>
+                <div class="prod_price">
+                  <a href="" class="primaryBtn mobile">Buy Now @ MRP Rs.87</a>
+
+                  <span class="mrp desktop">MRP Rs.300</span>
+                  <a href="" class="primaryBtn desktop">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--------Section end----->
+      </div>
+    </main>
+    <footer>
+      <div>
+        Copyright &#169; 2011- 2018 Sabka Bazaar Grocery Supplies Pvt Ltd
+      </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./sass/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./sass/css/common.css" />
+    <link rel="stylesheet" href="./sass/css/home.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!----------Header----------->
+    <header class="header">
+      <div class="hdWrp">
+        <div class="leftSec">
+          <a href="#" class="logoImg"
+            ><img src="images/logo.png" alt="logo" />
+          </a>
+          <nav class="navWrp">
+            <ul>
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+              <li>
+                <a href="plp.html">Products</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="rightSec">
+          <div class="rgtTop">
+            <a href="login.html">SignIn</a>
+            <a href="register.html">Register</a>
+          </div>
+          <div class="rgtBtm">
+            <a href="javascript:void(0);" class="cart_open" id="cart_open">
+              <span class="cartIco"></span>
+              <span class="cartCount">0</span>
+              <span class="cartTxt">items</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-------main------->
+
+    <main class="main-content">
+      <!-- cart starts -->
+      <div class="cart_flyout" id="cart_flyout">
+        <div class="cart_hd">
+          <h4>
+            <span class="cart_title">My Cart</span>
+            <span class="cart_hd_count">(1 item)</span>
+          </h4>
+          <button class="close_btn">X</button>
+        </div>
+        <div class="cart_bdy">
+          <div class="cart_prd">
+            <div class="cart_prd_img"></div>
+            <div class="cart_prd_dtl">
+              <h4>Apple - Washington,Regular, 4pcs</h4>
+              <div class="amt_dtl">
+                <a href="javascript:void(0)" class="counter decrement">-</a>
+                <span class="count">1</span>
+                <a href="javascript:void(0)" class="counter increment">+</a>
+                <span class="cart_mul">X</span>
+                <span class="cart_prd_amt">Rs.187</span>
+                <span class="cart_prd_price">Rs.187</span>
+              </div>
+            </div>
+          </div>
+          <div class="cart_content">
+            <div class="cart_msg_wrp">
+              <span class="crt_imgWrp"><img src="" alt="" /></span>
+              <span class="crt_txt">You won't find it cheaper anywhere</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart_ftr">
+          <p>Promo code can be applied on payment page</p>
+          <a href="" class="primaryBtn">
+            <span>Proceed to checkout</span>
+            <span class="grandTtl">Rs.187</span>
+          </a>
+        </div>
+      </div>
+      <!-- cart ends -->
+
+      <div class="main-container">
+        <!-------carousel------>
+        <div
+          id="carouselBannerIndicators"
+          class="carousel slide homeCarousel"
+          data-bs-ride="carousel"
+          data-interval="1000"
+          data-pause="hover"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselBannerIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselBannerIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselBannerIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselBannerIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/offer1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/offer2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/offer3.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/offer4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/offer5.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselBannerIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselBannerIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="prodContainer">
+          <div class="image_wrp">
+            <img src="images/fruits.png" alt="fruits and vegetables." />
+          </div>
+          <div class="content_wrp">
+            <h4 class="contnt_hd">Fruits & Vegetables</h4>
+            <p class="desc">A variety of fresh fruits and vegetables</p>
+            <a href="" class="primaryBtn">Explore fruit-and-veg</a>
+          </div>
+        </div>
+        <div class="prodContainer order1">
+          <div class="image_wrp">
+            <img src="images/bread.png" alt="Bakery cakes and dairy image." />
+          </div>
+          <div class="content_wrp">
+            <h4 class="contnt_hd">Bakery Cakes and Dairy</h4>
+            <p class="desc">
+              The best cupcakes, cookies, cakes, pies, cheesecakes, fresh bread,
+              biscotti, muffins, bagels, fresh coffee, milk and more.
+            </p>
+            <a href="" class="primaryBtn">Explore bakery-cakes-dairy</a>
+          </div>
+        </div>
+        <div class="prodContainer">
+          <div class="image_wrp">
+            <img src="images/beverages.png" alt="beverages image." />
+          </div>
+          <div class="content_wrp">
+            <h4 class="contnt_hd">Beverages</h4>
+            <p class="desc">
+              Our beverage department will ensure your fridge is always fully
+              stocked. Shop for soda, juice, beer and more.
+            </p>
+            <a href="" class="primaryBtn">Explore beverages</a>
+          </div>
+        </div>
+        <div class="prodContainer order1">
+          <div class="image_wrp">
+            <img src="images/beauty.png" alt="beauty and hygiene image" />
+          </div>
+          <div class="content_wrp">
+            <h4 class="contnt_hd">Beauty and Hygiene</h4>
+            <p class="desc">
+              Buy beauty and personal care products online in india at best
+              prices.
+            </p>
+            <a href="" class="primaryBtn">Explore beauty-hygiene</a>
+          </div>
+        </div>
+        <div class="prodContainer">
+          <div class="image_wrp">
+            <img src="images/baby.png" alt="baby care image" />
+          </div>
+          <div class="content_wrp">
+            <h4 class="contnt_hd">Baby Care</h4>
+            <p class="desc">
+              Shop online for Baby Products, Diapers, Skin Care Products,etc.
+            </p>
+            <a href="" class="primaryBtn">Explore baby</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        Copyright &#169; 2011- 2018 Sabka Bazaar Grocery Supplies Pvt Ltd
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

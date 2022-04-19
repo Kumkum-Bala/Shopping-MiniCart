@@ -1,0 +1,14 @@
+{
+  "name": "minicart_finalcasestudy",
+  "version": "1.0.0",
+  "description": "MiniCart",
+  "main": "index.js",
+  "scripts": {
+    "script": "sass scss/common.scss css/common.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,238 @@
+aside {
+  width: 304px;
+  background-color: #e8e6e6;
+  position: fixed;
+  height: 100%;
+}
+aside ul li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+aside ul li a {
+  border-bottom: 2px #354653;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+aside ul li:last-child {
+  border-bottom: none;
+}
+
+.prod_wrapper {
+  padding-top: 40px;
+  padding-left: 20px;
+  margin-left: 304px;
+  width: calc(100% - 304px);
+}
+
+.prod_content_wrp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prod_details {
+  width: calc(25% - 10px);
+  margin: 5px;
+  margin-bottom: 50px;
+  border-bottom: 2px dashed #e4e4e4;
+  box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.prod_name {
+  margin: 0;
+  font-size: 16px;
+  padding: 0 10px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.imgContainer {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.prod_img {
+  width: 100%;
+  max-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.prod_img img {
+  max-width: 100%;
+  width: auto;
+  margin: auto;
+}
+
+.prod_desc {
+  height: 90px;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: #333;
+  height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.prod_price {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 5px 10px 0px;
+}
+
+.mrp {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1220px) {
+  .prod_details {
+    width: calc(33% - 10px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .prod_details {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 992px) {
+  aside {
+    width: 220px;
+  }
+
+  .prod_wrapper {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+@media screen and (max-width: 767px) {
+  aside {
+    display: none;
+  }
+
+  .prod_content_wrp {
+    padding-top: 30px;
+  }
+
+  .prod_wrapper {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-left: 0;
+  }
+
+  .prod_details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .prod_name {
+    width: 100%;
+  }
+
+  .descWrapper {
+    width: calc(60% - 10px);
+  }
+
+  .imgContainer {
+    margin: 0;
+    height: 100px;
+    width: 40%;
+    margin-right: 10px;
+  }
+
+  .prod_price {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .prod_price .primaryBtn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  .leftMenuCont {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 100%;
+  }
+
+  .prod_img img {
+    max-height: 120px;
+  }
+
+  .leftMenuDrp {
+    position: relative;
+  }
+  .leftMenuDrp ul {
+    padding: 0;
+  }
+  .leftMenuDrp ul li a {
+    display: block;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .leftMenuDrp ul li a:hover {
+    background-color: #efefef;
+  }
+  .leftMenuDrp ul li a.selected {
+    background-color: #efefef;
+  }
+
+  .drpdn {
+    color: #fff;
+    background-color: #bf2957;
+    padding: 15px 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+  }
+  .drpdn:focus {
+    color: #fff;
+  }
+  .drpdn:hover {
+    color: #fff;
+  }
+
+  .selectedVal {
+    width: calc(100% - 14px);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+}
+
+/*# sourceMappingURL=plp.css.map */
