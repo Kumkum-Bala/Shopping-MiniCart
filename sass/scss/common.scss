@@ -4,19 +4,13 @@
   box-sizing: border-box;
   outline: 0;
 }
-
-$primary-color: #333;
-$secondary-color: #fff;
-$bg-color: #eee;
-$txt-color: #666;
-
 body {
   font-family: Arial !important;
   margin: 0;
   padding: 0;
   font-size: 14px;
   line-height: 1.42857143;
-  color: $primary-color;
+  color: #333;
 }
 p {
   margin: 0;
@@ -33,7 +27,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: #333;
   background-color: transparent;
 }
 label {
@@ -41,7 +35,7 @@ label {
 }
 header {
   height: 108px;
-  background: $secondary-color;
+  background: #fff;
   z-index: 998;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -84,11 +78,11 @@ header {
       padding: 0 10px;
       margin: 0;
       a {
-        color: $txt-color;
+        color: #666;
         font-size: 13px;
         text-decoration: none;
         &:hover {
-          color: $txt-color;
+          color: #666;
           text-decoration: underline;
         }
       }
@@ -102,9 +96,9 @@ header {
 }
 .rgtBtm {
   display: inline-block;
-  background-color: $bg-color;
+  background-color: #eee;
   font-size: 13px;
-  color: $primary-color;
+  color: #333;
   padding: 20px 15px;
   width: 140px;
   text-align: center;
@@ -114,18 +108,17 @@ header {
   text-align: right;
   width: 100%;
   a {
-    color: $primary-color;
+    color: #333;
     font-size: 13px;
     text-decoration: none;
     padding: 0 5px;
     &:hover {
-      color: $primary-color;
+      color: #333;
       font-size: 13px;
       text-decoration: underline;
     }
   }
 }
-
 .cartIco {
   background-image: url("../../images/cart.png");
   display: inline-block;
@@ -140,12 +133,12 @@ header {
 .cartCount {
   display: inline-block;
   vertical-align: middle;
-  color: $primary-color;
+  color: #333;
 }
 .cartTxt {
   display: inline-block;
   vertical-align: middle;
-  color: $primary-color;
+  color: #333;
 }
 footer {
   background-color: #eaeaea;
@@ -155,13 +148,13 @@ footer {
   z-index: 999;
 }
 .primaryBtn {
-  color: $secondary-color;
+  color: #fff;
   background-color: #bf2957;
   padding: 15px 15px;
   display: inline-block;
   text-decoration: none;
   &:hover {
-    color: $secondary-color;
+    color: #fff;
     background-color: #a61a44;
     padding: 15px 15px;
     text-decoration: none;
@@ -197,16 +190,26 @@ footer {
   outline: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 .empty_cart {
   height: 240px;
-  width: 100px;
+  width: auto;
   align-items: center;
+}
+.empItem {
+  padding-top: 100px;
+  padding-left: 190px;
+}
+.strt {
+  padding-left: 42%;
+}
+.itemCrt {
+  padding-top: 140px;
+  padding-left: 170px;
 }
 .cart_flyout {
   position: absolute;
   z-index: 1051;
-  background: $secondary-color;
+  background: #fff;
   right: 40px;
   top: 108px;
   width: 596px;
@@ -219,15 +222,15 @@ footer {
   padding: 10px 30px;
   h4 {
     font-size: 16px;
-    color: $secondary-color;
+    color: #fff;
   }
 }
 .cart_bdy {
   padding: 15px 0;
-  background-color: $bg-color;
+  background-color: #eee;
 }
 .cart_prd {
-  background-color: $secondary-color;
+  background-color: #fff;
   padding: 25px 30px;
   display: flex;
   justify-content: space-between;
@@ -261,15 +264,15 @@ footer {
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
-  color: $secondary-color;
+  color: #fff;
   align-self: center;
   &:hover {
-    color: $secondary-color;
+    color: #fff;
   }
 }
 .cart_msg_wrp {
   padding: 15px;
-  background: $secondary-color;
+  background: #fff;
   border-radius: 3px;
 }
 .cart_ftr {
@@ -291,7 +294,7 @@ footer {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  color: $secondary-color;
+  color: #fff;
 }
 .desktop {
   display: block !important;
@@ -375,5 +378,14 @@ footer {
     font-size: 13px;
     display: inline-block;
     vertical-align: middle;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
 }

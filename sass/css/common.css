@@ -215,8 +215,22 @@ footer {
 
 .empty_cart {
   height: 240px;
-  width: 100px;
+  width: auto;
   align-items: center;
+}
+
+.empItem {
+  padding-top: 100px;
+  padding-left: 190px;
+}
+
+.strt {
+  padding-left: 42%;
+}
+
+.itemCrt {
+  padding-top: 140px;
+  padding-left: 170px;
 }
 
 .cart_flyout {
@@ -421,6 +435,15 @@ footer {
     font-size: 13px;
     display: inline-block;
     vertical-align: middle;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
 }
 
